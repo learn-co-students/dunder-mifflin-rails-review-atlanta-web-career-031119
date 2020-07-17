@@ -1,0 +1,12 @@
+<h1> <%="#{@dog.name}\'s Info"%> </h1>
+
+    <label>Breed:</label> <br>
+        <%=@dog.breed%> <br> <br> <br>
+
+    <label>Age:</label> <br>
+        <%=@dog.age%> <br> <br> <br>
+
+    <label>Employee Minions</label> <br>
+        <%=@minions.each do |m|%>
+            <li> <%=link_to m.name, employees_path(m)%> </li>
+        <%end%>

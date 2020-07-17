@@ -1,0 +1,18 @@
+<h1><%="#{@emp.full_name}\'s Info"%></h1>
+
+    <label>Full Name:</label>
+        <%=@emp.full_name%>
+
+        <img  src="<%=@emp.img_url%>"></img>
+
+    <label>Alias</label>
+        <%=@emp.alias%>
+
+    <label>Title</label>
+        <%=@emp.title%>
+
+    <label>Office</label>
+        <%=@emp.office%>
+
+    <label>Dog of Choice</label>
+        <%=link_to "#{@choice_dog.name}", dogs_path(@choice_dog)%>
